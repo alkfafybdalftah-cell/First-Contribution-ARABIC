@@ -1,14 +1,10 @@
 {
-  "name": "wecima-addon",
+  "manifestVersion": "1.0.0",
+  "id": "com.wecima.addon",
+  "name": "WeCima Addon",
   "version": "1.0.0",
-  "description": "WeCima Addon for Nuvio",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js"
-  },
-  "dependencies": {
-    "cheerio": "^1.0.0",
-    "node-fetch": "^2.6.7",
-    "stremio-addon-sdk": "^1.6.3"
-  }
+  "description": "Custom addon to fetch content from WeCima",
+  "resources": ["catalog", "stream"],
+  "types": ["movie", "series"],
+  "baseUrl": "https://wecima.cx"
 }
